@@ -131,4 +131,101 @@ window.open("https://wa.me/919570005223?text="+message,"_blank");
 </script>
 
 </body>
+</html></header>
+
+<div class="container">
+
+<div class="card">
+<h2>🚗 Car Rental – WagonR</h2>
+<div class="price">10 KM तक Pickup & Drop – ₹700</div>
+<div class="price">Local Rental – ₹1,000 (50 KM तक)</div>
+<div class="price">Outstation – ₹1,500 (100 KM तक)</div>
+<ul>
+<li>इसके बाद ₹10/KM + Petrol</li>
+<li>Parking, Toll Tax आदि अलग से</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>🏍️ Bike Rental</h2>
+<div class="price">5 KM या उससे कम – ₹15/KM</div>
+<div class="price">5 KM से अधिक – ₹10/KM</div>
+</div>
+
+<div class="card">
+<h2>🛺 E-Rickshaw Service</h2>
+<p>ई-रिक्शा का किराया समय और यात्रा के अनुसार निर्धारित किया जाता है।</p>
+<p>कृपया अपनी पूरी Location, कब और कहाँ जाना है तथा ई-रिक्शा तुरंत चाहिए या निर्धारित समय पर—यह जानकारी भेजें।</p>
+<p>आपके नजदीकी E-Rickshaw Partner आपसे Call करेंगे।</p>
+</div>
+
+<div class="card">
+<h2>📋 Booking / Approx Total</h2>
+
+<form id="booking">
+<input id="name" placeholder="आपका नाम" required>
+<input id="phone" placeholder="मोबाइल नंबर" required>
+
+<select id="vehicle" required>
+<option value="">सेवा चुनें</option>
+<option>Car</option>
+<option>Bike</option>
+<option>E-Rickshaw</option>
+</select>
+
+<input id="date" type="date" required>
+<input id="time" type="time" required>
+<input id="people" type="number" placeholder="कितने आदमी हैं?" required>
+<input id="from" placeholder="कहाँ से जाना है?" required>
+<input id="to" placeholder="कहाँ तक जाना है?" required>
+<input id="endtime" type="time">
+<textarea id="extra" placeholder="अन्य जानकारी"></textarea>
+
+<button class="submit">💬 WhatsApp पर Booking भेजें</button>
+</form>
+</div>
+
+<div class="card">
+<h2>📞 Call Back चाहिए?</h2>
+<p>अगर आप चाहते हैं कि हमारी टीम आपको Call Back करे तो WhatsApp पर <b>CALL ME</b> लिखकर भेजें।</p>
+<p>अन्य नंबर पर Call Back चाहिए तो अपना नाम और मोबाइल नंबर भेजें। तुरंत Call Back चाहिए तो समय भी बताएं।</p>
+</div>
+
+<div class="card">
+<h2>⚠️ महत्वपूर्ण जानकारी</h2>
+<div class="note">
+यह किराया केवल अनुमानित है। दूरी, समय, यात्रा में बदलाव या किसी अन्य अतिरिक्त खर्च के कारण वास्तविक किराया अधिक या कम हो सकता है। Parking, Toll Tax आदि जहाँ लागू हों, अलग से देय होंगे। नियम एवं शर्तें लागू हैं।
+</div>
+</div>
+
+</div>
+
+<footer>
+<b>ALL IN ONE 24×7 SERVICE</b><br><br>
+📞 9570005223<br>
+📍 Chainpur, Saharsa, Bihar
+</footer>
+
+<script>
+document.getElementById("booking").addEventListener("submit",function(e){
+e.preventDefault();
+
+let message =
+"नमस्कार, मुझे Booking/Approx Total जानना है.%0A%0A"+
+"नाम: "+encodeURIComponent(document.getElementById("name").value)+"%0A"+
+"मोबाइल: "+encodeURIComponent(document.getElementById("phone").value)+"%0A"+
+"सेवा: "+encodeURIComponent(document.getElementById("vehicle").value)+"%0A"+
+"Date: "+encodeURIComponent(document.getElementById("date").value)+"%0A"+
+"Time: "+encodeURIComponent(document.getElementById("time").value)+"%0A"+
+"कितने आदमी: "+encodeURIComponent(document.getElementById("people").value)+"%0A"+
+"From: "+encodeURIComponent(document.getElementById("from").value)+"%0A"+
+"To: "+encodeURIComponent(document.getElementById("to").value)+"%0A"+
+"कितने बजे तक: "+encodeURIComponent(document.getElementById("endtime").value)+"%0A"+
+"अन्य जानकारी: "+encodeURIComponent(document.getElementById("extra").value);
+
+window.open("https://wa.me/919570005223?text="+message,"_blank");
+});
+</script>
+
+</body>
 </html>
